@@ -1,0 +1,124 @@
+@charset "UTF-8";    /* 文字コードの指定 */
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    color: #4c4c4c;
+    background-color: #fdfcf6;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.photo 
+{
+  background-image: url("../images/free-photo.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+#menu
+{
+    background-color:#ffe4b5;
+}
+
+.container
+{
+    margin: 0 auto 0 auto;
+    padding: 20px;
+    max-width: 1000px;
+}
+
+#menu .container
+{
+    display: -webkit-flex;
+    display:         flex;
+    flex-flow:row;
+}
+
+#menu .menu-box
+{
+    padding: 10px;
+    background-color: #fdfcf6;
+}
+
+#menu h2
+{
+    font-size:3.2rem;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    color: #fdfcf6;
+}
+
+
+#menu h3
+{
+    font-size: 2.4rem;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+    color:#66ccff;
+}
+
+
+#menu p
+{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+#footer
+{
+    padding-bottom:15px;
+}
+
+#footer h4
+{
+    font-size:1.6rem;
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+
+#footer .button-readmore
+{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    width: 33.3%;
+    padding: 10px 10px;
+    text-align: center;
+    color: #fff;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    background-color:#f08080;
+}
+
+#footer .button-readmore:hover
+{
+    background-color:#df7163;
+}
+
+
+@media (max-width : 768px) {
+    .photo {
+        height: 250px; 
+    }
+    
+    #menu .container{
+        flex-flow:column;
+    }
+}
